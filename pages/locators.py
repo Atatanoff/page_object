@@ -16,3 +16,10 @@ class LoginPageLocators:
     REG_PASSWORD2 = (By.ID, "id_registration_pasword2")
     REG_SUBMIT = (By.NAME, "registration_submit")
 
+class ProductPagesLocator:
+    BTN_BASKET = (By.CSS_SELECTOR, ".btn-add-to-basket")
+    MESSAGE = (By.CSS_SELECTOR, ".alert:nth-child(1) > .alertinner")
+    MESSAGE_BASKET = "был добавлен в вашу корзину"
+    MESSAGE_PRICE = (By.CSS_SELECTOR, ".alert:nth-child(3) > .alertinner strong")
+    PRICE_BOOK = (By.CSS_SELECTOR, ".product_main .price_color")
+    NAME_BOOK = (By.CSS_SELECTOR, ".product_main > h1")
