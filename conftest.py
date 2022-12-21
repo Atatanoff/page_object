@@ -12,8 +12,8 @@ def browser(request):
     lang = request.config.getoption("language")
     print("\nstart chrome browser for test..")
     options = Options()
-    options.add_argument('--headless') #фоновый режим
-    options.add_argument('--start-maximized')
+    #options.add_argument('--headless')         # если раскоментировать эти две строчки, 
+    #options.add_argument('--start-maximized')  # тесты будут запускаться в фоновом режиме
     options.add_experimental_option('prefs', {'intl.accept_languages': lang})
     browser = webdriver.Chrome(options=options)  
     yield browser
